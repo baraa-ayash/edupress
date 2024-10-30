@@ -1,0 +1,125 @@
+
+/* style from a hero include header*/
+.hero{
+    margin-top:70px;
+    padding:10px;
+    height: 60px;
+    display: flex;
+    gap: 8px;
+    background-color: #F5F5F5;
+    position: relative;
+    .p1{
+        color: #555555;
+    }
+    .p2{
+        padding-left: 5px;
+        color: #9d9d9d;
+    }
+    i{
+        position: absolute;
+        top:15px;
+        left: 90px;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* style from the section article */
+#article{
+    margin: 10px 70px;
+    .all-article{
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        .search{
+            display: flex;
+            gap: 10px;
+            .grid-ico{
+                width: 16px;
+                height: 16px;
+            }
+            .ic-search{
+                display: flex;
+                gap: 5px;
+                input{
+                    border: none;
+                    border-bottom:2px solid #555555;
+                }
+            }
+    
+        }
+    }
+
+    .contanier{
+        padding-top: 25px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+     .card{
+        width: 350px;
+        gap: 25px;
+        border: 1px solid #EAEAEA;
+        border-radius: 24px;
+        .img-art{
+            width: 100%;
+        }
+        .padd{
+            padding:10px;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 600px;
+            color: #000000;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400px;
+            color: #555555;
+        }
+        .date{
+            padding: 10px 0;
+            display: flex;
+            gap: 10px;
+            svg{
+                color: #FF782D;
+            }
+        }
+    }
+}}
+
+
+/* style from the section button */
+#btn div{
+    margin: 50px 0;
+   text-align: center;
+ button{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid #EAEAEA;
+    background:none;
+    padding: 10px;
+    gap: 10px;
+   font-size: 20px;
+   a{
+    text-decoration: none;
+   }
+}
+.btn-one{
+    background-color: #000000;
+    color: white;
+   }
+}
+   
+
+/* media quary */
+@media screen and (max-width : 992px) {
+    .article .all-article{
+        flex-direction: column;
+       }  
+       .course .contanier{
+        flex-direction: column;
+        flex-wrap: nowrap;
+       }   
+}

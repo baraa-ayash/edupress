@@ -1,0 +1,161 @@
+
+/* style from hero */
+.hero{
+    margin-top: 70px;
+    padding:10px;
+    height: 60px;
+    display: flex;
+    gap: 8px;
+    background-color: var(--light-gray);
+    position: relative;
+    .p1{
+        color:var(--dark-gray);
+    }
+    .p2{
+        padding-left: 5px;
+        color:var(--gray-color);
+    }
+    i{
+        position: absolute;
+        top:15px;
+        left: 90px;
+        width: 16px;
+        height: 16px;
+    }
+}
+/* style from first section course */
+#course{
+    .container{
+        .all-course{
+            margin: 20px;
+            gap: 10px;
+            display: flex;
+            justify-content: space-between;
+            .search{
+                display: flex;
+                gap: 10px;
+                .ic-search{
+                    display: flex;
+                    gap: 5px;
+                    input{
+                        border: none;
+                        border-bottom:2px solid var(--dark-gray);
+                    }
+                }
+              img{
+                width: 16px;
+                height: 16px;
+              }
+            }
+        }
+        .course-card{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            row-gap: 35px;
+            .course{
+                max-width: 385px;
+                border-radius: 20px;
+                border: 1px solid #eaeaea;
+                position: relative;
+                .course-tag{
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    background-color: var(--black-color);
+                    color: #fff;
+                    border-radius: 8px;
+                    padding: 8px 12px;
+                    font-weight: 500;
+                }
+                .course-img{
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0 0;
+                }
+                .course-details{
+                    padding: 20px;
+                    p span{
+                        font-weight: 500;
+                    }
+                    h3{
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-top: 12px;
+                    }
+                    .info{
+                        padding-block: 16px;
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+                        border-bottom: 1px solid #eaeaea;
+                        div{
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+                            color: var(--dark-gray);
+                            font-weight: 500;
+                            svg{
+                                color: var(--primary-color);
+                            }
+                        }
+                    }
+                    .price{
+                        padding-top: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        p{
+                            color: var(--gray-color);
+                        }
+                        span{
+                            color: #55be24;
+                        }
+                        a{
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+/* style from seconed section btn */
+#btn div{
+    margin: 50px 0;
+   text-align: center;
+ button{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid #EAEAEA;
+    background:none;
+    padding: 10px;
+    gap: 10px;
+   font-size: 20px;
+   a{
+    text-decoration: none;
+   }
+}
+.btn-one{
+    background-color: var(--black-color);
+    color: white;
+   }
+}
+
+/* media quary */
+@media screen and (max-width : 992px) {
+   .course .all-course{
+    flex-direction: column;
+   }  
+   .course .parent{
+    flex-direction: column;
+    
+   }   
+  
+}
+/* end project css */
+
+ 
